@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta nmae="viewport" content=" width=device-width, initial-scale =1.0">
+        <title>Questão 2</title>
+        <link rel="stylesheet" type="text/css" href="Questão2.css" />
+    
+    </head>
+
+    <body>
+        <header class="navbar">
+            <img class="logo" src="Logo.PNG" />
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </header>
+       
+        <div class="galeria-container">
+            <div class="galeria">
+                <img src="Galeria1.gif" class="slide active">
+                <img src="Galeria2.jpg" class="slide active">
+                <img src="Galeria3.jpg" class="slide">
+                <img src="Galeria4.jpg" class="slide">
+                <img src="Galeria5.png" class="slide">
+            </div>
+        </div>
+        
+        <div class="cards-container">
+            <a href="#modal1" class="card">
+                <img src="card1.png" alt="">
+                <h3>Sobre o Game</h3>
+            </a>
+
+            <a href="#modal2" class="card">
+                <img src="card3.jpg" alt="">
+                <h3>Táticas de Jogo</h3>
+            </a>
+
+            <a href="#modal3" class="card">
+                <img src="card4.jpg">
+                <h3>Curiosidades</h3>
+            </a>
+        </div>
+
+        <!--Modal 1-->
+        <div id="modal1" class="overlay">
+            <div class="modal">
+                <a href="#" class="fechar">✖</a>
+                    
+                    <!-- Bloco 1-->
+                    <div class="bloco">
+                    <img src="Card_1_1.jpg" class="foto1">
+                        <div class="P1">
+                            <h3>Introdução histórica</h3>
+
+                            <p>
+                                Worms Armageddon é um jogo de estratégia por turnos lançado em 1999,
+                                desenvolvido e publicado pela Team17. O jogo faz parte da famosa franquia Worms, 
+                                conhecida pelo seu humorcartunesco e jogabilidade baseada em física.
+                            </p>
+                        
+                            <p>
+                                Embora não seja o primeiro título da série, Worms Armageddon é amplamente
+                                considerado por fãs e críticos como o ápice da era clássica 2D da franquia,
+                                sendo até hoje jogado competitivamente e mantido ativo por comunidades e
+                                atualizações tardias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bloco 2-->
+                    <div class="bloco invertido">
+                    <img src="Card_1_2.jpg" class="foto2">
+                        <div class="P2">
+                            <p>
+                                A franquia Worms foi criada por Andy Davidson, um programador britânico autodidata. 
+                                Em 1994, Davidson desenvolveu um protótipo de jogo chamado “Total Wormage”, 
+                                inicialmente como um projeto pessoal para demonstrar suas habilidades técnicas.
+                            </p>
+
+                            <p>
+                                Esse protótipo apresentava conceitos fundamentais que se manteriam na franquia como:
+                                personagens pequenos e frágeis, os ambientes destrutíveis, a física aplicada aos projéteis,
+                                o combate por turnos, o e humor exagerado e não violento graficamente
+                            </p>
+
+                            <p>
+                                Davidson apresentou o projeto à Team17, que reconheceu imediatamente o potencial comercial 
+                                e criativo da ideia. A empresa adquiriu os direitos do jogo, refinou o conceito e 
+                                lançou o primeiro Worms oficialmente em 1995.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bloco 3-->
+                    <div class="bloco">
+                    <img src="Card_1_3.png" alt="Worms Armageddon" class="foto1">
+                        <div class="P3">
+                            <p>
+                                Worms Armageddon nasceu em 1999, com o objetivo claro de aperfeiçoar tudo o que funcionava nos jogos 
+                                anteriores, sem romper com a identidade 2D clássica da franquia. Suas principais inspirações são:
+                                Refinar a experiência competitiva, tornar o jogo mais personalizável e possinilitar multiplayer local e online.
+                            </p>
+                            <p>
+                                Durante a construção da Armageddon foram utilizadas gráficos totalmente 2D em sprites e uso intenso de bitmap 
+                                e animações frame a frame. Sua programação foi otimizada para PCs da época (Windows 95/98), além de melhorias 
+                                no uso de cálculos matemáticos de física para trajetórias, colisões e explosões. Passando a utilizando parametros
+                                físicos como: gravidade, resistência do ar, força aplicada nos dispatos para calcular a reação e a trajetória
+                                das explosões. Tornando o jogo estratégico, pois cada ação tem consequências previsíveis para jogadores experientes.
+                            </p>
+
+                            <p>
+                                A nova versão trouxe novidades como: mais armas (Holy Hand Grenade, Banana Bomb, Concrete Donkey), uma IA melhorada,
+                                multiplayer online mais estável, possibilidade de personalização extrema de times, vozes, bandeiras e nomes, além de
+                                mapas maiores e mais complexos e por fim opções avançadas de regras, permitindo partidas completamente customizadas.
+                                Essas melhorias transformaram o jogo em uma plataforma competitiva, não apenas um jogo casual, tornando-se um clássico 
+                                atemporal. Mesmo após mais de duas décadas, ele continua sendo jogado em campeonatos, recebe atualizações oficiais e é
+                                considerado por muitos o melhor Worms já feito.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal 2-->
+        <div id="modal2" class="overlay">
+            <div class="modal">
+            <a href="#" class="fechar">✖</a>
+
+                <!--Boloco 1-->
+                <div class="bloco">
+                <img src="Card_2_1.jpeg" class="foto1">
+                    <div class="P1">
+                        <p>
+                            Worms Armageddon não é apenas um jogo “de tiro engraçado”. Ele combina estratégia por turnos, física aplicada, 
+                            controle de território e gestão de risco. Cada jogada influencia o terreno, a posição dos worms e as possibilidades 
+                            futuras do adversário. Tem como objetivo eliminar todos os worms das equipes adversárias usando armas, 
+                            ferramentas e o próprio terreno a seu favor. Onde cada jogador controla um worm por vez e seu turno tem tempo limitado.
+                            Durante seu turno, você pode: Se mover, atacar e usar ferramentas (corda, jetpack, teleporte).Após o turno, 
+                            o controle passa ao adversário
+                        </p>
+                    </div>
+                </div>
+
+                <!--Bloco 2-->
+                <div class="bloco invertido">
+                 <img src="Card_2_3.png" class="foto2">
+                    <div classe="P2">
+                        <h3>Táticas mais famosas de Worms Armageddon</h3>
+                        <p>
+                            <b>Holy Hand Grenade:</b> consiste em você não mira apenas na pessoa, 
+                               mas na estrutura que sustenta tudo.
+                            </p>
+                            <p>
+                                <b>Banana Bomb:</b> Banana Bomb explode em vários fragmentos após a detonação inicial,
+                                a tatica consiste em controlar o caos, sabendo onde os fragmentos tendem a cair.
+                            </p>
+                    </div>
+                </div>
+
+                <!--Bloco3-->
+                <div class="bloco">
+                <img src="Card_2_2.png" class="foto1">
+                    <div class="P3">
+                        <p>
+                            <b>Afogamento estratégico:</b> Em vez de tirar toda a vida do worm, o 
+                            jogador destrói o chão abaixo dele, fazendo-o cair na água.
+                        </p>
+                        <p>
+                            <b>Bazuca com vento:</b>Uso da bazuca considerando a direção e força do vento.
+                            Lendo o ambiente antes do lançamento.
+                        </p>                        
+                        <p>
+                            <b>Jogar para sobreviver:</b>Nem sempre atacar é a melhor opção.
+                            Esconder worms, fortificar áreas com terreno forçando o adversário a cometer erros.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal 3-->
+        <div id="modal3" class="overlay">
+            <div class="modal">
+                <a href="#" class="fechar">✖</a>
+
+                <!--Bloco 1-->
+                <div class="bloco">
+                <img src="Card_3_1.jpeg" class="foto1">
+                <div class="P1">
+                    <h3>Curiosidades</h3>
+                    <p><b>Worms Armageddon ainda é jogado competitivamente após mais de 20 anos!</b>
+                        mesmo tendo sido lançado em 1999, o jogo nunca morreu competitivamente. ainda
+                        podemos encontrar campeonatos organizados pelas comunidades com partidas competitivas, 
+                        rankings informais entre jogadores experientes e atualizações tardias oficiais
+                    </p>
+                </div>
+                </div>
+                
+                <!--Bloco 2-->
+                <div class="bloco invertido">
+                <img src="Card_3_2.jpeg" class="foto2">
+                <div class="P2">
+                    <p><b>A Holy Hand Grenade é uma referência cultural, não apenas uma arma!</b>A famosa Holy Hand Grenade não 
+                        foi criada do zero pela Team17. Ela é uma referência direta ao filme “Monty Python and the Holy Grail” (1975), 
+                        onde a granada sagrada é usada com uma contagem exageradamente solene antes da explosão. Possui uma das maiores 
+                        áreas de explosão, exige precisão absoluta de tempo, pode decidir uma partida inteira em um único lance.
+                    </p>
+                    <p>
+                        Essa mistura de humor britânico seguido mecânica de alto risco é uma das marcas registradas da franquia Worms.
+                    </p>
+                </div>
+                </div>
+
+                <!--Bloco 3-->
+                <div class="bloco">
+                <img src="Card_3_3.jpg" classe="foto1">
+                <div class="P3">
+                    <p><b>O motor de física simples é o segredo da profundidade do jogo!</b>
+                        Apesar de parecer simples visualmente, Worms Armageddon utiliza um modelo de física extremamente consistente, baseado em:
+                        Gravidade constante, trajetórias previsíveis e interação total com o terreno destrutível.
+
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

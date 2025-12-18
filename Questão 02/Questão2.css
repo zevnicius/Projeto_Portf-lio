@@ -1,0 +1,217 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.5)),
+        url('Fundo.jpg');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00eaff;
+}
+
+.galeria {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    margin-top: 150px;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+.slide:nth-child(4) { animation-delay: 9s; }
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* ========= MODAL ========== */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* transparência média */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* ========= MODAL ========== */
+.overlay:target {
+    display: flex;
+}
+
+/* Caixa do modal */
+.modal {
+    background: #fff;
+    width: 85%;
+    max-width: 1000px;
+
+    max-height: 85vh;       /* adapta à tela */
+    overflow-y: auto;       /* barra de rolagem interna */
+
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    text-align: left;
+}
+
+/* Botão fechar */
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* ===== BLOCO DE CONTEÚDO ===== */
+.bloco {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Alternância direita / esquerda */
+.bloco.invertido {
+    flex-direction: row-reverse;
+}
+
+/* Texto */
+.bloco p,
+.bloco h3 {
+    color: #000;
+    line-height: 1.6;
+}
+
+.bloco h3 {
+    margin-bottom: 10px;
+}
+
+/* Imagens */
+.bloco img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/*Trava a barra quanho o Modal está ativo*/
+.overlay:target ~ body {
+    overflow: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bloco,
+    .bloco.invertido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bloco img {
+        width: 100%;
+    }
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
